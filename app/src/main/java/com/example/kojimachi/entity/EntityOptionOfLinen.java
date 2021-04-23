@@ -2,8 +2,8 @@ package com.example.kojimachi.entity;
 
 import org.json.JSONObject;
 
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_ID;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_NAME;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_ID;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_NAME;
 
 public class EntityOptionOfLinen {
     public int id;

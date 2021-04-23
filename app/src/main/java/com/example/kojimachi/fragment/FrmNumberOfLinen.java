@@ -12,18 +12,18 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityArrayAdapter;
-import jp.co.kojimachi.entity.EntityOptionOfLinen;
-import jp.co.kojimachi.entity.EntityUpdateOfLinen;
-import jp.co.kojimachi.listener.ListenerHandleResult;
-import jp.co.kojimachi.utils.AppUtils;
-import jp.co.kojimachi.view.CustomNextNumber;
-import jp.co.kojimachi.view.CustomSpinner;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityArrayAdapter;
+import com.example.kojimachi.entity.EntityOptionOfLinen;
+import com.example.kojimachi.entity.EntityUpdateOfLinen;
+import com.example.kojimachi.listener.ListenerHandleResult;
+import com.example.kojimachi.utils.AppUtils;
+import com.example.kojimachi.view.CustomNextNumber;
+import com.example.kojimachi.view.CustomSpinner;
 
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_LIST_OPTION;
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_NUMBER_OF_LINE;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_LIST_OPTION;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_NUMBER_OF_LINE;
 
 public class FrmNumberOfLinen extends BaseFragment implements View.OnClickListener {
 

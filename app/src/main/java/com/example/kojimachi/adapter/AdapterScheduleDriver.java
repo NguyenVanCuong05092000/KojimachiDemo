@@ -13,10 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.entity.EntitySchedule;
-import jp.co.kojimachi.listener.ListenerOptionHomeDriverClick;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.entity.EntitySchedule;
+import com.example.kojimachi.listener.ListenerOptionHomeDriverClick;
 
 public class AdapterScheduleDriver extends RecyclerView.Adapter<AdapterScheduleDriver.HolderScheduleAdapter> {
     private static final String TAG = "AdapterScheduleDriver";

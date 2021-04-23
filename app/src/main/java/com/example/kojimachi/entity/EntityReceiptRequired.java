@@ -4,7 +4,7 @@ import android.text.TextUtils;
 
 import org.json.JSONObject;
 
-import jp.co.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.ApiConstants;
 
 public class EntityReceiptRequired {
     public String name;

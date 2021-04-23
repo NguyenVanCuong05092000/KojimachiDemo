@@ -26,6 +26,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.kojimachi.R;
+import com.example.kojimachi.constant.ApiConstants;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import org.json.JSONArray;
@@ -38,70 +39,82 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 
-import jp.co.kojimachi.constant.ApiConstants;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.constant.EnumUrl;
-import jp.co.kojimachi.constant.IntentActionConstant;
-import jp.co.kojimachi.constant.PrefConstants;
-import jp.co.kojimachi.constant.RequestConstants;
-import jp.co.kojimachi.data.PrefManager;
-import jp.co.kojimachi.entity.ApiResult;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityBookingConfirmation;
-import jp.co.kojimachi.entity.EntityCar;
-import jp.co.kojimachi.entity.EntityDailyActuarial;
-import jp.co.kojimachi.entity.EntityDailyNewspaper;
-import jp.co.kojimachi.entity.EntitySchedule;
-import jp.co.kojimachi.entity.EntityShiftTable;
-import jp.co.kojimachi.entity.EntityTherapistSchedule;
-import jp.co.kojimachi.entity.EntityUpdateOfLinen;
-import jp.co.kojimachi.entity.EntityUpdateOption;
-import jp.co.kojimachi.entity.api.LoginResponseEntity;
-import jp.co.kojimachi.entity.prefentity.PrefBoolean;
-import jp.co.kojimachi.entity.prefentity.PrefInt;
-import jp.co.kojimachi.entity.prefentity.PrefString;
-import jp.co.kojimachi.fragment.BaseFragment;
-import jp.co.kojimachi.fragment.FrmBookingConfirmation;
-import jp.co.kojimachi.fragment.FrmDailyActuarial;
-import jp.co.kojimachi.fragment.FrmDailyNewspaper;
-import jp.co.kojimachi.fragment.FrmHome;
-import jp.co.kojimachi.fragment.FrmHomeDriver;
-import jp.co.kojimachi.fragment.FrmLogin;
-import jp.co.kojimachi.fragment.FrmMap;
-import jp.co.kojimachi.fragment.FrmNumberOfLinen;
-import jp.co.kojimachi.fragment.FrmSalesHistory;
-import jp.co.kojimachi.fragment.FrmShiftTable;
-import jp.co.kojimachi.fragment.FrmVehicleSettings;
-import jp.co.kojimachi.listener.CallbackApi;
-import jp.co.kojimachi.listener.CallbackGetDetailActuarial;
-import jp.co.kojimachi.listener.CallbackGetDetailNewspaper;
-import jp.co.kojimachi.listener.CallbackGetDetailSchedule;
-import jp.co.kojimachi.listener.CallbackGetListCar;
-import jp.co.kojimachi.listener.CallbackGetSchedule;
-import jp.co.kojimachi.listener.CallbackGetTherapistSchedule;
-import jp.co.kojimachi.listener.ListenerCheckGPS;
-import jp.co.kojimachi.listener.ListenerGPSChecking;
-import jp.co.kojimachi.listener.ListenerHandleResult;
-import jp.co.kojimachi.listener.ListenerUpdateStatusShift;
-import jp.co.kojimachi.location.TrackingLocationManager;
-import jp.co.kojimachi.network.APIHelper;
-import jp.co.kojimachi.services.ServiceTrackingLocation;
+import com.example.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.EnumUrl;
+import com.example.kojimachi.constant.IntentActionConstant;
+import com.example.kojimachi.constant.PrefConstants;
+import com.example.kojimachi.constant.RequestConstants;
+import com.example.kojimachi.data.PrefManager;
+import com.example.kojimachi.entity.ApiResult;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityBookingConfirmation;
+import com.example.kojimachi.entity.EntityCar;
+import com.example.kojimachi.entity.EntityDailyActuarial;
+import com.example.kojimachi.entity.EntityDailyNewspaper;
+import com.example.kojimachi.entity.EntitySchedule;
+import com.example.kojimachi.entity.EntityShiftTable;
+import com.example.kojimachi.entity.EntityTherapistSchedule;
+import com.example.kojimachi.entity.EntityUpdateOfLinen;
+import com.example.kojimachi.entity.EntityUpdateOption;
+import com.example.kojimachi.entity.api.LoginResponseEntity;
+import com.example.kojimachi.entity.prefentity.PrefBoolean;
+import com.example.kojimachi.entity.prefentity.PrefInt;
+import com.example.kojimachi.entity.prefentity.PrefString;
+import com.example.kojimachi.fragment.BaseFragment;
+import com.example.kojimachi.fragment.FrmBookingConfirmation;
+import com.example.kojimachi.fragment.FrmDailyActuarial;
+import com.example.kojimachi.fragment.FrmDailyNewspaper;
+import com.example.kojimachi.fragment.FrmHome;
+import com.example.kojimachi.fragment.FrmHomeDriver;
+import com.example.kojimachi.fragment.FrmLogin;
+import com.example.kojimachi.fragment.FrmMap;
+import com.example.kojimachi.fragment.FrmNumberOfLinen;
+import com.example.kojimachi.fragment.FrmSalesHistory;
+import com.example.kojimachi.fragment.FrmShiftTable;
+import com.example.kojimachi.fragment.FrmVehicleSettings;
+import com.example.kojimachi.listener.CallbackApi;
+import com.example.kojimachi.listener.CallbackGetDetailActuarial;
+import com.example.kojimachi.listener.CallbackGetDetailNewspaper;
+import com.example.kojimachi.listener.CallbackGetDetailSchedule;
+import com.example.kojimachi.listener.CallbackGetListCar;
+import com.example.kojimachi.listener.CallbackGetSchedule;
+import com.example.kojimachi.listener.CallbackGetTherapistSchedule;
+import com.example.kojimachi.listener.ListenerCheckGPS;
+import com.example.kojimachi.listener.ListenerGPSChecking;
+import com.example.kojimachi.listener.ListenerHandleResult;
+import com.example.kojimachi.listener.ListenerUpdateStatusShift;
+import com.example.kojimachi.location.TrackingLocationManager;
+import com.example.kojimachi.network.APIHelper;
+import com.example.kojimachi.services.ServiceTrackingLocation;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
-import static jp.co.kojimachi.constant.AppConstants.ID_DRIVER;
-import static jp.co.kojimachi.constant.AppConstants.ID_TECHNICIAN;
-import static jp.co.kojimachi.constant.IntentActionConstant.ACTION_PUSH_NEWS;
-import static jp.co.kojimachi.constant.NotificationConstants.NOTIFICATION_DATA_TRANSFER;
-import static jp.co.kojimachi.constant.PrefConstants.CAR_NUMBER;
-import static jp.co.kojimachi.constant.PrefConstants.CREATE_AT;
-import static jp.co.kojimachi.constant.PrefConstants.ID_CAR;
-import static jp.co.kojimachi.constant.PrefConstants.IS_WORK_TODAY;
-import static jp.co.kojimachi.constant.PrefConstants.NAME;
-import static jp.co.kojimachi.constant.PrefConstants.PHONE;
-import static jp.co.kojimachi.constant.PrefConstants.ROLE;
-import static jp.co.kojimachi.constant.PrefConstants.SKIP_TUT_LOCATION;
-import static jp.co.kojimachi.constant.PrefConstants.TOKEN;
-import static jp.co.kojimachi.constant.PrefConstants.USER_ID;
+import static com.example.kojimachi.constant.ApiConstants.API_KEY;
+import static com.example.kojimachi.constant.ApiConstants.API_VERSION;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_API_VERSION;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_LOGIN_ID;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_PASSWORD;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_TOKEN;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_ERROR_INTERNET;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_ERROR_TOKEN;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_OK;
+import static com.example.kojimachi.constant.AppConstants.ID_DRIVER;
+import static com.example.kojimachi.constant.AppConstants.ID_TECHNICIAN;
+import static com.example.kojimachi.constant.ExtraConstants.EXTRA_ID;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_LOGIN;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_VEHICLE_SETTINGS;
+import static com.example.kojimachi.constant.IntentActionConstant.ACTION_PUSH_NEWS;
+import static com.example.kojimachi.constant.NotificationConstants.NOTIFICATION_DATA_TRANSFER;
+import static com.example.kojimachi.constant.PrefConstants.CAR_NUMBER;
+import static com.example.kojimachi.constant.PrefConstants.CREATE_AT;
+import static com.example.kojimachi.constant.PrefConstants.ID_CAR;
+import static com.example.kojimachi.constant.PrefConstants.IS_WORK_TODAY;
+import static com.example.kojimachi.constant.PrefConstants.NAME;
+import static com.example.kojimachi.constant.PrefConstants.PHONE;
+import static com.example.kojimachi.constant.PrefConstants.ROLE;
+import static com.example.kojimachi.constant.PrefConstants.SKIP_TUT_LOCATION;
+import static com.example.kojimachi.constant.PrefConstants.TOKEN;
+import static com.example.kojimachi.constant.PrefConstants.USER_ID;
 
 public class ActMain extends BaseActivity {
 
@@ -361,7 +374,7 @@ public class ActMain extends BaseActivity {
                             JSONObject jsResponse = (JSONObject) response;
                             onLoginSuccess(new LoginResponseEntity(
                                     jsResponse.optInt(ApiConstants.PARAM_ID),
-                                    jsResponse.optString(ApiConstants.PARAM_LOGIN_ID),
+                                    jsResponse.optString(PARAM_LOGIN_ID),
                                     jsResponse.optInt(ApiConstants.PARAM_USER_ID),
                                     jsResponse.optInt(ApiConstants.PARAM_ROLE),
                                     jsResponse.optInt(ApiConstants.PARAM_EMPLOYMENT_STATUS),
@@ -964,7 +977,7 @@ public class ActMain extends BaseActivity {
                     public void onFinished(ApiResult result) {
                         if (AppConstants.LOG_DEBUG)
                             Log.e(getClassName(), "registerFibTokenPush >>> result : " + result.toString());
-                        if (result.statusCode == ApiConstants.STATUS_OK) {
+                        if (result.statusCode == STATUS_OK) {
                             prefWriteString(TOKEN, token);
                             // more handle when register firebase-token success if need
                             return;

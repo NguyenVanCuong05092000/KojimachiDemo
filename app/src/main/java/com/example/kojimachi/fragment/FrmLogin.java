@@ -15,12 +15,12 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.adapter.AdapterViewPageLogo;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.R;
+import com.example.kojimachi.adapter.AdapterViewPageLogo;
+import com.example.kojimachi.utils.AppUtils;
 
-import static jp.co.kojimachi.constant.AppConstants.ID_DRIVER;
-import static jp.co.kojimachi.constant.AppConstants.ID_TECHNICIAN;
+import static com.example.kojimachi.constant.AppConstants.ID_DRIVER;
+import static com.example.kojimachi.constant.AppConstants.ID_TECHNICIAN;
 
 public class FrmLogin extends BaseFragment implements View.OnClickListener {
     private final int[] LIST_LOGO_DEFAULT = {R.drawable.img_logo, R.drawable.img_logo2};

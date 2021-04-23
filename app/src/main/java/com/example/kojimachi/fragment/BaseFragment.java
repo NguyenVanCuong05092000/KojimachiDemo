@@ -14,8 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import jp.co.kojimachi.activities.ActMain;
-import jp.co.kojimachi.constant.ExtraConstants;
+import com.example.kojimachi.activities.ActMain;
+import com.example.kojimachi.constant.ExtraConstants;
 
 public abstract class BaseFragment extends Fragment implements ExtraConstants {
     protected String TAG = this.getClass().getSimpleName();

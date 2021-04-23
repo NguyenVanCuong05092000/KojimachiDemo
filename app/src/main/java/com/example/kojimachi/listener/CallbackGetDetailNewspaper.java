@@ -1,6 +1,6 @@
 package com.example.kojimachi.listener;
 
-import jp.co.kojimachi.entity.EntityDailyNewspaper;
+import com.example.kojimachi.entity.EntityDailyNewspaper;
 
 public interface CallbackGetDetailNewspaper {
     void onSuccessGetDetailNewspaper(EntityDailyNewspaper entityDailyNewspaper);

@@ -1,4 +1,4 @@
-     package jp.co.kojimachi.utils;
+     package com.example.kojimachi.utils;
 
 import android.text.Editable;
 import android.text.TextWatcher;

@@ -1,4 +1,4 @@
-package jp.co.kojimachi.secret;
+package com.example.kojimachi.secret;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -15,7 +15,7 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import jp.co.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.AppConstants;
 
 public class SecretHelper {
     private final String TAG = "SecretHelper";

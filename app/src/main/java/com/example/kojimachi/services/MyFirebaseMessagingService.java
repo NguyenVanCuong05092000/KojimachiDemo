@@ -1,4 +1,4 @@
-package jp.co.kojimachi.services;
+package com.example.kojimachi.services;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -19,17 +19,17 @@ import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.Map;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.activities.ActMain;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.constant.IntentActionConstant;
-import jp.co.kojimachi.constant.NotificationConstants;
-import jp.co.kojimachi.data.PrefManager;
+import com.example.kojimachi.R;
+import com.example.kojimachi.activities.ActMain;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.IntentActionConstant;
+import com.example.kojimachi.constant.NotificationConstants;
+import com.example.kojimachi.data.PrefManager;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
-import static jp.co.kojimachi.constant.NotificationConstants.NOTIFICATION_BODY;
-import static jp.co.kojimachi.constant.NotificationConstants.NOTIFICATION_DATA_TRANSFER;
-import static jp.co.kojimachi.constant.NotificationConstants.NOTIFICATION_TITLE;
+import static com.example.kojimachi.constant.NotificationConstants.NOTIFICATION_BODY;
+import static com.example.kojimachi.constant.NotificationConstants.NOTIFICATION_DATA_TRANSFER;
+import static com.example.kojimachi.constant.NotificationConstants.NOTIFICATION_TITLE;
 
 
 /**

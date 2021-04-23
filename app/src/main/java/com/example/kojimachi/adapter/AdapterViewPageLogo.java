@@ -11,7 +11,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.Objects;
 
-import jp.co.kojimachi.R;
+import com.example.kojimachi.R;
 
 public class AdapterViewPageLogo extends PagerAdapter {
 

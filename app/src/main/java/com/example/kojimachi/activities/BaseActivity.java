@@ -10,21 +10,21 @@ import androidx.fragment.app.FragmentManager;
 
 import java.util.List;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.ApiConstants;
-import jp.co.kojimachi.constant.ExtraConstants;
-import jp.co.kojimachi.constant.FragmentConstants;
-import jp.co.kojimachi.data.PrefManager;
-import jp.co.kojimachi.dialog.DialogConfirm;
-import jp.co.kojimachi.dialog.DialogNotice;
-import jp.co.kojimachi.entity.prefentity.PrefBoolean;
-import jp.co.kojimachi.entity.prefentity.PrefFloat;
-import jp.co.kojimachi.entity.prefentity.PrefInt;
-import jp.co.kojimachi.entity.prefentity.PrefLong;
-import jp.co.kojimachi.entity.prefentity.PrefString;
-import jp.co.kojimachi.entity.prefentity.PrefValue;
-import jp.co.kojimachi.listener.CallbackAction;
-import jp.co.kojimachi.secret.SecretHelper;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.ExtraConstants;
+import com.example.kojimachi.constant.FragmentConstants;
+import com.example.kojimachi.data.PrefManager;
+import com.example.kojimachi.dialog.DialogConfirm;
+import com.example.kojimachi.dialog.DialogNotice;
+import com.example.kojimachi.entity.prefentity.PrefBoolean;
+import com.example.kojimachi.entity.prefentity.PrefFloat;
+import com.example.kojimachi.entity.prefentity.PrefInt;
+import com.example.kojimachi.entity.prefentity.PrefLong;
+import com.example.kojimachi.entity.prefentity.PrefString;
+import com.example.kojimachi.entity.prefentity.PrefValue;
+import com.example.kojimachi.listener.CallbackAction;
+import com.example.kojimachi.secret.SecretHelper;
 
 
 /**

@@ -17,21 +17,21 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.adapter.AdapterShiftTable;
-import jp.co.kojimachi.entity.ApiResult;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityArea;
-import jp.co.kojimachi.entity.EntityArrayAdapter;
-import jp.co.kojimachi.entity.EntityShiftTable;
-import jp.co.kojimachi.entity.EntityTherapistSchedule;
-import jp.co.kojimachi.listener.CallbackApi;
-import jp.co.kojimachi.listener.CallbackGetTherapistSchedule;
-import jp.co.kojimachi.utils.AppUtils;
-import jp.co.kojimachi.view.CustomMonthLayout;
-import jp.co.kojimachi.view.CustomSpinner;
+import com.example.kojimachi.R;
+import com.example.kojimachi.adapter.AdapterShiftTable;
+import com.example.kojimachi.entity.ApiResult;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityArea;
+import com.example.kojimachi.entity.EntityArrayAdapter;
+import com.example.kojimachi.entity.EntityShiftTable;
+import com.example.kojimachi.entity.EntityTherapistSchedule;
+import com.example.kojimachi.listener.CallbackApi;
+import com.example.kojimachi.listener.CallbackGetTherapistSchedule;
+import com.example.kojimachi.utils.AppUtils;
+import com.example.kojimachi.view.CustomMonthLayout;
+import com.example.kojimachi.view.CustomSpinner;
 
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_SHIFT_TABLE;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_SHIFT_TABLE;
 
 public class FrmShiftTable extends BaseFragment implements View.OnClickListener, CallbackGetTherapistSchedule, AdapterShiftTable.OnClickItemListener, CallbackApi {
     private TextView tvStartAttendanceTime;

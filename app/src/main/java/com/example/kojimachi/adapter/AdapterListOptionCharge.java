@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.EntityArrayAdapter;
-import jp.co.kojimachi.entity.EntityOptionBonus;
-import jp.co.kojimachi.utils.AppUtils;
-import jp.co.kojimachi.view.CustomSpinner;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.EntityArrayAdapter;
+import com.example.kojimachi.entity.EntityOptionBonus;
+import com.example.kojimachi.utils.AppUtils;
+import com.example.kojimachi.view.CustomSpinner;
 
 public class AdapterListOptionCharge extends RecyclerView.Adapter<AdapterListOptionCharge.HolderAdapterCheckBox> {
     private ArrayList<EntityOptionBonus> bonusChargeArrayList;

@@ -21,26 +21,26 @@ import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.listener.ListenerCheckGPS;
-import jp.co.kojimachi.listener.ListenerGPSChecking;
-import jp.co.kojimachi.services.ServiceTrackingLocation;
-import jp.co.kojimachi.utils.AppUtils;
-import jp.co.kojimachi.utils.DebugHelper;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.listener.ListenerCheckGPS;
+import com.example.kojimachi.listener.ListenerGPSChecking;
+import com.example.kojimachi.services.ServiceTrackingLocation;
+import com.example.kojimachi.utils.AppUtils;
+import com.example.kojimachi.utils.DebugHelper;
 
-import static jp.co.kojimachi.constant.RequestConstants.RC_ENABLE_GPS;
-import static jp.co.kojimachi.constant.RequestConstants.RC_LOCATION_SETTINGS;
-import static jp.co.kojimachi.constant.RequestConstants.RC_WIRELESS_SETTINGS;
+import static com.example.kojimachi.constant.RequestConstants.RC_ENABLE_GPS;
+import static com.example.kojimachi.constant.RequestConstants.RC_LOCATION_SETTINGS;
+import static com.example.kojimachi.constant.RequestConstants.RC_WIRELESS_SETTINGS;
 
 public class TrackingLocationManager {
     private static final String TAG = "TrackingLocationManager";
     private Activity mContext;
-    private static jp.co.kojimachi.location.TrackingLocationManager _instance;
+    private static com.example.kojimachi.location.TrackingLocationManager _instance;
 
-    public static jp.co.kojimachi.location.TrackingLocationManager getInstance(Activity context) {
+    public static com.example.kojimachi.location.TrackingLocationManager getInstance(Activity context) {
         if (_instance == null) {
-            _instance = new jp.co.kojimachi.location.TrackingLocationManager(context);
+            _instance = new com.example.kojimachi.location.TrackingLocationManager(context);
         }
         return _instance;
     }

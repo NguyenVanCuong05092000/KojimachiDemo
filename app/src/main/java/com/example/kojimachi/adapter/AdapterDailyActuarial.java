@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.EntityFeeDailyActuarial;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.EntityFeeDailyActuarial;
+import com.example.kojimachi.utils.AppUtils;
 
 public class AdapterDailyActuarial extends RecyclerView.Adapter<AdapterDailyActuarial.HolderDailyActuarial> {
     private ArrayList<EntityFeeDailyActuarial> entityFeeDailyActuarials;

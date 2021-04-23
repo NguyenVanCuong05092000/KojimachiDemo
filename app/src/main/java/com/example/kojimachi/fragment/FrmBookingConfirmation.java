@@ -18,28 +18,28 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.adapter.AdapterListOptionCharge;
-import jp.co.kojimachi.constant.PrefConstants;
-import jp.co.kojimachi.data.PrefManager;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityBookingConfirmation;
-import jp.co.kojimachi.entity.EntityUpdateOption;
-import jp.co.kojimachi.listener.CallbackGetDetailSchedule;
-import jp.co.kojimachi.listener.ListenerHandleResult;
-import jp.co.kojimachi.listener.ListenerUpdateStatusShift;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.R;
+import com.example.kojimachi.adapter.AdapterListOptionCharge;
+import com.example.kojimachi.constant.PrefConstants;
+import com.example.kojimachi.data.PrefManager;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityBookingConfirmation;
+import com.example.kojimachi.entity.EntityUpdateOption;
+import com.example.kojimachi.listener.CallbackGetDetailSchedule;
+import com.example.kojimachi.listener.ListenerHandleResult;
+import com.example.kojimachi.listener.ListenerUpdateStatusShift;
+import com.example.kojimachi.utils.AppUtils;
 
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_BOOKING_CONFIRM;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_CHANGE;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_CREATED;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_END_OF_TREATMENT;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_EXTENSION_OF_ADD_OPTIONS;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_START_MOVING;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_START_MOVING_SHIFT;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_START_OF_TREATMENT;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_WAIT;
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_BOOKING_CONFIRMATION;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_BOOKING_CONFIRM;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_CHANGE;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_CREATED;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_END_OF_TREATMENT;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_EXTENSION_OF_ADD_OPTIONS;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_START_MOVING;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_START_MOVING_SHIFT;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_START_OF_TREATMENT;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_WAIT;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_BOOKING_CONFIRMATION;
 
 public class FrmBookingConfirmation extends BaseFragment implements View.OnClickListener, CallbackGetDetailSchedule {
 

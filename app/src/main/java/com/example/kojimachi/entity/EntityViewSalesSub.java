@@ -4,9 +4,9 @@ import android.text.TextUtils;
 
 import org.json.JSONObject;
 
-import jp.co.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.ApiConstants;
 
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_ID;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_ID;
 
 public class EntityViewSalesSub {
     public int id;

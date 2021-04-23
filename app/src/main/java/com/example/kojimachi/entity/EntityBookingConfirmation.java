@@ -11,9 +11,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import jp.co.kojimachi.constant.ApiConstants;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.utils.AppUtils;
 
 public class EntityBookingConfirmation implements Serializable {
     public int scheduleId;

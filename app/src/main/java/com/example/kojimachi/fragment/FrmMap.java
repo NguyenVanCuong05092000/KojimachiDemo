@@ -16,10 +16,10 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.BackStackData;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.BackStackData;
 
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_MAP;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_MAP;
 
 public class FrmMap extends BaseFragment implements View.OnClickListener {
     private double latitude;

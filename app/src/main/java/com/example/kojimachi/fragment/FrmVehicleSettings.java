@@ -10,24 +10,24 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.ApiResult;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityArrayAdapter;
-import jp.co.kojimachi.entity.EntityCar;
-import jp.co.kojimachi.entity.prefentity.PrefInt;
-import jp.co.kojimachi.entity.prefentity.PrefString;
-import jp.co.kojimachi.listener.CallbackApi;
-import jp.co.kojimachi.listener.CallbackGetListCar;
-import jp.co.kojimachi.utils.AppUtils;
-import jp.co.kojimachi.utils.AutoAddTextWatcher;
-import jp.co.kojimachi.view.CustomSpinner;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.ApiResult;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityArrayAdapter;
+import com.example.kojimachi.entity.EntityCar;
+import com.example.kojimachi.entity.prefentity.PrefInt;
+import com.example.kojimachi.entity.prefentity.PrefString;
+import com.example.kojimachi.listener.CallbackApi;
+import com.example.kojimachi.listener.CallbackGetListCar;
+import com.example.kojimachi.utils.AppUtils;
+import com.example.kojimachi.utils.AutoAddTextWatcher;
+import com.example.kojimachi.view.CustomSpinner;
 
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_VEHICLE_SETTINGS;
-import static jp.co.kojimachi.constant.PrefConstants.CAR_NUMBER;
-import static jp.co.kojimachi.constant.PrefConstants.ID_CAR;
-import static jp.co.kojimachi.constant.PrefConstants.NAME;
-import static jp.co.kojimachi.constant.PrefConstants.PHONE;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_VEHICLE_SETTINGS;
+import static com.example.kojimachi.constant.PrefConstants.CAR_NUMBER;
+import static com.example.kojimachi.constant.PrefConstants.ID_CAR;
+import static com.example.kojimachi.constant.PrefConstants.NAME;
+import static com.example.kojimachi.constant.PrefConstants.PHONE;
 
 
 public class FrmVehicleSettings extends BaseFragment implements View.OnClickListener, CallbackGetListCar {

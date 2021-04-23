@@ -9,8 +9,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import jp.co.kojimachi.constant.ApiConstants;
-import jp.co.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.AppConstants;
 
 public class EntityViewSales {
     public int dateYear;

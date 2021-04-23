@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.EntityViewSales;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.EntityViewSales;
+import com.example.kojimachi.utils.AppUtils;
 
 public class AdapterSalesHistory extends RecyclerView.Adapter<AdapterSalesHistory.SalesHistoryViewHolder> {
     private final Context mContext;

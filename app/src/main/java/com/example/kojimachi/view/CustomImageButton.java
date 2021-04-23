@@ -1,4 +1,4 @@
-package jp.co.kojimachi.view;
+package com.example.kojimachi.view;
 
 import android.content.Context;
 import android.graphics.PorterDuff;

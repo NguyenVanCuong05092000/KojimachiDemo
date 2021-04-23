@@ -17,9 +17,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.entity.EntityShiftTable;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.entity.EntityShiftTable;
 
 public class AdapterShiftTable extends RecyclerView.Adapter<AdapterShiftTable.HolderShiftTableAdapter> {
     private ArrayList<EntityShiftTable> shiftTableArrayList;

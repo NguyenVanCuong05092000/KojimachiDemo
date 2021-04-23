@@ -1,4 +1,4 @@
-package jp.co.kojimachi.network;
+package com.example.kojimachi.network;
 
 import android.os.AsyncTask;
 import android.text.TextUtils;
@@ -19,16 +19,16 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.constant.EnumUrl;
-import jp.co.kojimachi.entity.ApiResult;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.EnumUrl;
+import com.example.kojimachi.entity.ApiResult;
 
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_MESSAGE;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_RESPONSE;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_STATUS;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_TOKEN;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_TOTAL;
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_ERROR;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_MESSAGE;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_RESPONSE;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_STATUS;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_TOKEN;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_TOTAL;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_ERROR;
 
 
 public class APIHelper {

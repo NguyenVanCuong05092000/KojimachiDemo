@@ -11,16 +11,16 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.ApiConstants;
-import jp.co.kojimachi.entity.ApiResult;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityDailyNewspaper;
-import jp.co.kojimachi.listener.CallbackApi;
-import jp.co.kojimachi.listener.CallbackGetDetailNewspaper;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.entity.ApiResult;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityDailyNewspaper;
+import com.example.kojimachi.listener.CallbackApi;
+import com.example.kojimachi.listener.CallbackGetDetailNewspaper;
+import com.example.kojimachi.utils.AppUtils;
 
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_DAILY_NEWSPAPER;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_DAILY_NEWSPAPER;
 
 public class FrmDailyNewspaper extends BaseFragment implements View.OnClickListener, CallbackGetDetailNewspaper, CallbackApi {
     private TextView tvDateAndTime;

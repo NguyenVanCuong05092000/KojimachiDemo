@@ -1,4 +1,4 @@
-package jp.co.kojimachi.view;
+package com.example.kojimachi.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,8 +15,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.EntityArrayAdapter;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.EntityArrayAdapter;
 
 public class CustomSpinner extends ConstraintLayout {
 

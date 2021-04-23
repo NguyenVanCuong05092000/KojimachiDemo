@@ -6,7 +6,7 @@ import org.json.JSONObject;
 
 import java.io.Serializable;
 
-import jp.co.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.ApiConstants;
 
 public class EntityArea implements Serializable {
     public int id;

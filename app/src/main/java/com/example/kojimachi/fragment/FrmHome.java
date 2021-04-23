@@ -19,19 +19,19 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Locale;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.adapter.AdapterSchedule;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.constant.ExtraConstants;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntitySchedule;
-import jp.co.kojimachi.listener.CallbackGetSchedule;
-import jp.co.kojimachi.listener.ListenerClickSchedule;
-import jp.co.kojimachi.utils.AppUtils;
-import jp.co.kojimachi.view.CustomMonthLayout;
+import com.example.kojimachi.R;
+import com.example.kojimachi.adapter.AdapterSchedule;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.ExtraConstants;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntitySchedule;
+import com.example.kojimachi.listener.CallbackGetSchedule;
+import com.example.kojimachi.listener.ListenerClickSchedule;
+import com.example.kojimachi.utils.AppUtils;
+import com.example.kojimachi.view.CustomMonthLayout;
 
-import static jp.co.kojimachi.constant.ApiConstants.STATUS_START_WORKING;
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_HOME;
+import static com.example.kojimachi.constant.ApiConstants.STATUS_START_WORKING;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_HOME;
 
 public class FrmHome extends BaseFragment implements View.OnClickListener, ListenerClickSchedule, CallbackGetSchedule {
 

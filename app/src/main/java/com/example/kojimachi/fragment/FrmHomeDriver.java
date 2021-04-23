@@ -13,30 +13,30 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.adapter.AdapterScheduleDriver;
-import jp.co.kojimachi.constant.ExtraConstants;
-import jp.co.kojimachi.constant.PrefConstants;
-import jp.co.kojimachi.dialog.DialogHomeDriver;
-import jp.co.kojimachi.entity.ApiResult;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityCar;
-import jp.co.kojimachi.entity.EntitySchedule;
-import jp.co.kojimachi.entity.EntityVehicleSettings;
-import jp.co.kojimachi.entity.prefentity.PrefInt;
-import jp.co.kojimachi.entity.prefentity.PrefString;
-import jp.co.kojimachi.listener.CallbackActionDriver;
-import jp.co.kojimachi.listener.CallbackApi;
-import jp.co.kojimachi.listener.CallbackGetSchedule;
-import jp.co.kojimachi.listener.ListenerOptionHomeDriverClick;
-import jp.co.kojimachi.listener.ListenerUpdateStatusShift;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.R;
+import com.example.kojimachi.adapter.AdapterScheduleDriver;
+import com.example.kojimachi.constant.ExtraConstants;
+import com.example.kojimachi.constant.PrefConstants;
+import com.example.kojimachi.dialog.DialogHomeDriver;
+import com.example.kojimachi.entity.ApiResult;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityCar;
+import com.example.kojimachi.entity.EntitySchedule;
+import com.example.kojimachi.entity.EntityVehicleSettings;
+import com.example.kojimachi.entity.prefentity.PrefInt;
+import com.example.kojimachi.entity.prefentity.PrefString;
+import com.example.kojimachi.listener.CallbackActionDriver;
+import com.example.kojimachi.listener.CallbackApi;
+import com.example.kojimachi.listener.CallbackGetSchedule;
+import com.example.kojimachi.listener.ListenerOptionHomeDriverClick;
+import com.example.kojimachi.listener.ListenerUpdateStatusShift;
+import com.example.kojimachi.utils.AppUtils;
 
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_HOME_DRIVER;
-import static jp.co.kojimachi.constant.PrefConstants.CAR_NUMBER;
-import static jp.co.kojimachi.constant.PrefConstants.ID_CAR;
-import static jp.co.kojimachi.constant.PrefConstants.NAME;
-import static jp.co.kojimachi.constant.PrefConstants.PHONE;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_HOME_DRIVER;
+import static com.example.kojimachi.constant.PrefConstants.CAR_NUMBER;
+import static com.example.kojimachi.constant.PrefConstants.ID_CAR;
+import static com.example.kojimachi.constant.PrefConstants.NAME;
+import static com.example.kojimachi.constant.PrefConstants.PHONE;
 
 public class FrmHomeDriver extends BaseFragment implements View.OnClickListener, ListenerOptionHomeDriverClick, CallbackGetSchedule {
 

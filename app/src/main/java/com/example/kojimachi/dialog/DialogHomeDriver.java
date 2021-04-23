@@ -6,11 +6,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.EntityArrayAdapter;
-import jp.co.kojimachi.entity.EntityVehicleSettings;
-import jp.co.kojimachi.listener.CallbackActionDriver;
-import jp.co.kojimachi.view.CustomSpinner;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.EntityArrayAdapter;
+import com.example.kojimachi.entity.EntityVehicleSettings;
+import com.example.kojimachi.listener.CallbackActionDriver;
+import com.example.kojimachi.view.CustomSpinner;
 
 public class DialogHomeDriver extends BaseDialog implements View.OnClickListener {
     private CustomSpinner tvSpinnerBoardingVehicle;

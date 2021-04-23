@@ -2,7 +2,7 @@ package com.example.kojimachi.listener;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.entity.EntitySchedule;
+import com.example.kojimachi.entity.EntitySchedule;
 
 public interface CallbackGetSchedule {
 

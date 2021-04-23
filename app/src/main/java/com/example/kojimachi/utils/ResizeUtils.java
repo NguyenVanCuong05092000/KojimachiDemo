@@ -1,9 +1,9 @@
-package jp.co.kojimachi.utils;
+package com.example.kojimachi.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
 
-import jp.co.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.AppConstants;
 
 public class ResizeUtils {
     private Context mContext;

@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import jp.co.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.ApiConstants;
 
 public class EntitySchedule {
 

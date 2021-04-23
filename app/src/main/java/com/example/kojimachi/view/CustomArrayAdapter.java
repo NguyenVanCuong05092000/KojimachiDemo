@@ -1,4 +1,4 @@
-package jp.co.kojimachi.view;
+package com.example.kojimachi.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.entity.EntityArrayAdapter;
+import com.example.kojimachi.R;
+import com.example.kojimachi.entity.EntityArrayAdapter;
 
 public class CustomArrayAdapter extends BaseAdapter {
 

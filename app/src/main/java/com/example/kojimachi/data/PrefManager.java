@@ -5,13 +5,13 @@ import android.content.SharedPreferences;
 
 import java.util.List;
 
-import jp.co.kojimachi.constant.PrefConstants;
-import jp.co.kojimachi.entity.prefentity.PrefBoolean;
-import jp.co.kojimachi.entity.prefentity.PrefFloat;
-import jp.co.kojimachi.entity.prefentity.PrefInt;
-import jp.co.kojimachi.entity.prefentity.PrefLong;
-import jp.co.kojimachi.entity.prefentity.PrefString;
-import jp.co.kojimachi.entity.prefentity.PrefValue;
+import com.example.kojimachi.constant.PrefConstants;
+import com.example.kojimachi.entity.prefentity.PrefBoolean;
+import com.example.kojimachi.entity.prefentity.PrefFloat;
+import com.example.kojimachi.entity.prefentity.PrefInt;
+import com.example.kojimachi.entity.prefentity.PrefLong;
+import com.example.kojimachi.entity.prefentity.PrefString;
+import com.example.kojimachi.entity.prefentity.PrefValue;
 
 public class PrefManager implements PrefConstants {
 
@@ -20,11 +20,11 @@ public class PrefManager implements PrefConstants {
     private PrefManager() {
     }
 
-    private static jp.co.kojimachi.data.PrefManager prefManager;
+    private static com.example.kojimachi.data.PrefManager prefManager;
 
-    public static jp.co.kojimachi.data.PrefManager getInstance(Context context) {
+    public static com.example.kojimachi.data.PrefManager getInstance(Context context) {
         if (prefManager == null) {
-            prefManager = new jp.co.kojimachi.data.PrefManager();
+            prefManager = new com.example.kojimachi.data.PrefManager();
             settings = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
         }
         return prefManager;

@@ -6,7 +6,7 @@ import android.util.DisplayMetrics;
 
 import androidx.annotation.NonNull;
 
-import jp.co.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.AppConstants;
 
 public abstract class BaseDialog extends Dialog {
     public BaseDialog(@NonNull Context context, boolean cancelable, OnCancelListener cancelListener) {

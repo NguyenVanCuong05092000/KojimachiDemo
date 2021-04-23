@@ -1,10 +1,10 @@
-package jp.co.kojimachi.view;
+package com.example.kojimachi.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
 import androidx.appcompat.widget.AppCompatEditText;
-import jp.co.kojimachi.listener.OnTextChangedListener;
+import com.example.kojimachi.listener.OnTextChangedListener;
 
 
 public class CustomCurrencyEditText extends AppCompatEditText implements OnTextChangedListener {

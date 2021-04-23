@@ -14,10 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.entity.EntitySchedule;
-import jp.co.kojimachi.listener.ListenerClickSchedule;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.entity.EntitySchedule;
+import com.example.kojimachi.listener.ListenerClickSchedule;
 
 public class AdapterSchedule extends RecyclerView.Adapter<AdapterSchedule.HolderScheduleAdapter> {
     private ArrayList<EntitySchedule> scheduleArrayList;

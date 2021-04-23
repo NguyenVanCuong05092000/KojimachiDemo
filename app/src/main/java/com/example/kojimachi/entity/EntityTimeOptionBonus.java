@@ -2,7 +2,7 @@ package com.example.kojimachi.entity;
 
 import org.json.JSONObject;
 
-import jp.co.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.ApiConstants;
 
 public class EntityTimeOptionBonus {
     public int timeBonus;

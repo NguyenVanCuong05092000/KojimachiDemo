@@ -7,7 +7,7 @@ import android.os.Handler;
 
 import androidx.annotation.Nullable;
 
-import jp.co.kojimachi.constant.NotificationConstants;
+import com.example.kojimachi.constant.NotificationConstants;
 
 public class ActSplash extends Activity implements NotificationConstants {
 

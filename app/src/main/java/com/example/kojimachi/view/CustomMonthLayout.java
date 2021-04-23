@@ -1,4 +1,4 @@
-package jp.co.kojimachi.view;
+package com.example.kojimachi.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -14,8 +14,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.AppConstants;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.AppConstants;
 
 public class CustomMonthLayout extends FrameLayout {
     public CustomMonthLayout(Context context) {

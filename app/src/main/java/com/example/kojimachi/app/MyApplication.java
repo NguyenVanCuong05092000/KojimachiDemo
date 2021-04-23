@@ -3,7 +3,7 @@ package com.example.kojimachi.app;
 import androidx.multidex.MultiDexApplication;
 
 public class MyApplication extends MultiDexApplication {
-    private static jp.co.kojimachi.app.MyApplication _instance;
+    private static com.example.kojimachi.app.MyApplication _instance;
 
     @Override
     public void onCreate() {
@@ -11,7 +11,7 @@ public class MyApplication extends MultiDexApplication {
         _instance = this;
     }
 
-    public static jp.co.kojimachi.app.MyApplication getInstance() {
+    public static com.example.kojimachi.app.MyApplication getInstance() {
         return _instance;
     }
 }

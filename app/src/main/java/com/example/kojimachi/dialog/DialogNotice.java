@@ -6,7 +6,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 
-import jp.co.kojimachi.R;
+import com.example.kojimachi.R;
 
 
 public class DialogNotice extends Dialog {

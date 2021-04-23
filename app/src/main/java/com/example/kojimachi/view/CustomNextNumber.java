@@ -1,4 +1,4 @@
-package jp.co.kojimachi.view;
+package com.example.kojimachi.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.constant.AppConstants;
+import com.example.kojimachi.R;
+import com.example.kojimachi.constant.AppConstants;
 
 public class CustomNextNumber extends ConstraintLayout {
     public CustomNextNumber(Context context) {

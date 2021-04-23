@@ -16,17 +16,17 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.adapter.AdapterSalesHistory;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.constant.ExtraConstants;
-import jp.co.kojimachi.entity.BackStackData;
-import jp.co.kojimachi.entity.EntityViewSales;
-import jp.co.kojimachi.listener.ListenerHandleResult;
-import jp.co.kojimachi.utils.AppUtils;
-import jp.co.kojimachi.view.CustomMonthLayout;
+import com.example.kojimachi.R;
+import com.example.kojimachi.adapter.AdapterSalesHistory;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.ExtraConstants;
+import com.example.kojimachi.entity.BackStackData;
+import com.example.kojimachi.entity.EntityViewSales;
+import com.example.kojimachi.listener.ListenerHandleResult;
+import com.example.kojimachi.utils.AppUtils;
+import com.example.kojimachi.view.CustomMonthLayout;
 
-import static jp.co.kojimachi.constant.FragmentConstants.FRM_VIEW_SALES;
+import static com.example.kojimachi.constant.FragmentConstants.FRM_VIEW_SALES;
 
 public class FrmSalesHistory extends BaseFragment implements View.OnClickListener {
     private RecyclerView rcViewSales;

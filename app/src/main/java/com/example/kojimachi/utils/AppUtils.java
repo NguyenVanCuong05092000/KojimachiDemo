@@ -1,4 +1,4 @@
-package jp.co.kojimachi.utils;
+package com.example.kojimachi.utils;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -22,9 +22,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import jp.co.kojimachi.services.ServiceTrackingLocation;
+import com.example.kojimachi.services.ServiceTrackingLocation;
 
-import static jp.co.kojimachi.constant.AppConstants.CURRENCY_FORMAT;
+import static com.example.kojimachi.constant.AppConstants.CURRENCY_FORMAT;
 
 public class AppUtils {
     public static boolean isNetworkAvailable(Context context) {

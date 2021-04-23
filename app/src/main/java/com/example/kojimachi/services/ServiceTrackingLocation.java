@@ -1,4 +1,4 @@
-package jp.co.kojimachi.services;
+package com.example.kojimachi.services;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -33,31 +33,31 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.loopj.android.http.RequestParams;
 
-import jp.co.kojimachi.R;
-import jp.co.kojimachi.app.MyApplication;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.constant.IntentActionConstant;
-import jp.co.kojimachi.constant.NotificationConstants;
-import jp.co.kojimachi.constant.PrefConstants;
-import jp.co.kojimachi.data.PrefManager;
-import jp.co.kojimachi.entity.ApiResult;
-import jp.co.kojimachi.entity.prefentity.PrefFloat;
-import jp.co.kojimachi.listener.CallbackApi;
-import jp.co.kojimachi.network.ApiClient;
-import jp.co.kojimachi.secret.SecretHelper;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.R;
+import com.example.kojimachi.app.MyApplication;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.IntentActionConstant;
+import com.example.kojimachi.constant.NotificationConstants;
+import com.example.kojimachi.constant.PrefConstants;
+import com.example.kojimachi.data.PrefManager;
+import com.example.kojimachi.entity.ApiResult;
+import com.example.kojimachi.entity.prefentity.PrefFloat;
+import com.example.kojimachi.listener.CallbackApi;
+import com.example.kojimachi.network.ApiClient;
+import com.example.kojimachi.secret.SecretHelper;
+import com.example.kojimachi.utils.AppUtils;
 
-import static jp.co.kojimachi.constant.ApiConstants.ANDROID;
-import static jp.co.kojimachi.constant.ApiConstants.API_KEY;
-import static jp.co.kojimachi.constant.ApiConstants.API_TRACKING_LOCATION;
-import static jp.co.kojimachi.constant.ApiConstants.API_VERSION;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_API;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_API_VERSION;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_DEVICE_TYPE;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_DEVICE_UUID;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_LAT;
-import static jp.co.kojimachi.constant.ApiConstants.PARAM_LNG;
-import static jp.co.kojimachi.constant.ExtraConstants.EXTRA_LOCATION;
+import static com.example.kojimachi.constant.ApiConstants.ANDROID;
+import static com.example.kojimachi.constant.ApiConstants.API_KEY;
+import static com.example.kojimachi.constant.ApiConstants.API_TRACKING_LOCATION;
+import static com.example.kojimachi.constant.ApiConstants.API_VERSION;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_API;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_API_VERSION;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_DEVICE_TYPE;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_DEVICE_UUID;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_LAT;
+import static com.example.kojimachi.constant.ApiConstants.PARAM_LNG;
+import static com.example.kojimachi.constant.ExtraConstants.EXTRA_LOCATION;
 
 public class ServiceTrackingLocation extends Service implements IntentActionConstant {
     //Cmt

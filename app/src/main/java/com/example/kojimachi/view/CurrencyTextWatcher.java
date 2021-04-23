@@ -1,4 +1,4 @@
-package jp.co.kojimachi.view;
+package com.example.kojimachi.view;
 
 
 import android.text.Editable;
@@ -6,8 +6,8 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-import jp.co.kojimachi.listener.OnTextChangedListener;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.listener.OnTextChangedListener;
+import com.example.kojimachi.utils.AppUtils;
 
 public class CurrencyTextWatcher implements TextWatcher {
 

@@ -1,4 +1,4 @@
-package jp.co.kojimachi.network;
+package com.example.kojimachi.network;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,11 +11,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.Header;
-import jp.co.kojimachi.constant.ApiConstants;
-import jp.co.kojimachi.constant.AppConstants;
-import jp.co.kojimachi.entity.ApiResult;
-import jp.co.kojimachi.listener.CallbackApi;
-import jp.co.kojimachi.utils.AppUtils;
+import com.example.kojimachi.constant.ApiConstants;
+import com.example.kojimachi.constant.AppConstants;
+import com.example.kojimachi.entity.ApiResult;
+import com.example.kojimachi.listener.CallbackApi;
+import com.example.kojimachi.utils.AppUtils;
 
 public class ApiClient implements ApiConstants {
 

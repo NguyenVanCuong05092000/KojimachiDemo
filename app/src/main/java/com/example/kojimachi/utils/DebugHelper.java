@@ -1,8 +1,8 @@
-package jp.co.kojimachi.utils;
+package com.example.kojimachi.utils;
 
 import android.util.Log;
 
-import jp.co.kojimachi.constant.AppConstants;
+import com.example.kojimachi.constant.AppConstants;
 
 public class DebugHelper {
     public static void Log(String TAG, String msg) {
