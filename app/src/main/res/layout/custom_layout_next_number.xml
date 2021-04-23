@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/ivMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_iv_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNumberPieces"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/ivMinus"
+        app:layout_constraintEnd_toStartOf="@id/tvPieces"
+        app:layout_constraintStart_toEndOf="@id/ivMinus"
+        app:layout_constraintTop_toTopOf="@id/ivMinus" />
+
+    <TextView
+        android:id="@+id/tvPieces"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/lbl_tvPieces"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/ivMinus"
+        app:layout_constraintEnd_toStartOf="@id/ivPlus"
+        app:layout_constraintStart_toEndOf="@id/tvNumberPieces"
+        app:layout_constraintTop_toTopOf="@id/ivMinus" />
+
+    <ImageView
+        android:id="@+id/ivPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_iv_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivMinus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

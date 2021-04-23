@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#162E4D</color>
+    <color name="colorPrimaryDark">#162E4D</color>
+    <color name="colorAccent">#162E4D</color>
+    <color name="colorBorder">#707070</color>
+    <color name="clBorderMenu">#E4E4E4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlue">#FF0000FF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorTextTitle">#515151</color>
+    <color name="colorBtnLogin">#00C9A0</color>
+    <color name="colorBgEdtLogin">#D1ECE7</color>
+    <color name="colorBgScheduledToDeposit">#F8F8F8</color>
+    <color name="colorBtnLeaveWork">#D5D5D5</color>
+    <color name="colorMain">#00C9A0</color>
+    <color name="colorBtnBack">#FF5700</color>
+    <color name="colorBgItemTable1">#E5FBF7</color>
+    <color name="colorBgItemTable2">#FFEBE1</color>
+    <color name="colorBgItemTable3">#FFC400</color>
+    <color name="colorText">#515151</color>
+    <color name="colorBgrBtnCancel">#FF5700</color>
+    <color name="colorBgrBtnSelected">#D5D5D5</color>
+    <color name="colorTextBtnSelected">#848484</color>
+    <color name="colorBgrBtnExtensionSelected">#00B4C9</color>
+    <color name="colorBgClBack">#9200C9A0</color>
+    <color name="colorBgClBackWhite">#00FFFFFF</color>
+
+</resources>

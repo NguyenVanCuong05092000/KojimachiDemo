@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomButton">
+        <attr name="isButtonNotShadow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSpinner">
+        <attr name="isOptionBonus" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomMonthLayout">
+        <attr name="isDay" format="boolean"/>
+    </declare-styleable>
+</resources>

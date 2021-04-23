@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".fragment.FrmBookingConfirmation">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0533" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9547" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/scBooking"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_27sdp"
+        android:background="@drawable/bg_btn_notice"
+        app:layout_constraintBottom_toTopOf="@id/clFooter"
+        app:layout_constraintEnd_toStartOf="@id/glEnd"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRoot"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBookingConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStartIconBookingConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.0414" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStartTextBookingConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <ImageView
+                    android:id="@+id/ivTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_iv_time"
+                    app:layout_constraintStart_toEndOf="@+id/glStartIconBookingConfirm"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivTime"
+                    app:layout_constraintStart_toEndOf="@+id/glStartTextBookingConfirm"
+                    app:layout_constraintTop_toTopOf="@+id/ivTime" />
+
+                <ImageView
+                    android:id="@+id/ivHotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:src="@drawable/ic_iv_hotel"
+                    app:layout_constraintStart_toEndOf="@+id/glStartIconBookingConfirm"
+                    app:layout_constraintTop_toBottomOf="@+id/ivTime" />
+
+                <TextView
+                    android:id="@+id/tvTitleHotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/glStartTextBookingConfirm"
+                    app:layout_constraintTop_toTopOf="@+id/ivHotel" />
+
+                <TextView
+                    android:id="@+id/tvInfoHotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="@+id/tvTitleHotel"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleHotel" />
+
+                <ImageView
+                    android:id="@+id/ivTechnicians"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_iv_technicians"
+                    app:layout_constraintStart_toEndOf="@+id/glStartIconBookingConfirm"
+                    app:layout_constraintTop_toBottomOf="@+id/tvInfoHotel" />
+
+                <TextView
+                    android:id="@+id/tvInfoTechnicians"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@+id/glStartTextBookingConfirm"
+                    app:layout_constraintTop_toTopOf="@+id/ivTechnicians" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/tvInfoTechnicians">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glStartIconInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.0414" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glStartTextInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.15" />
+
+                    <ImageView
+                        android:id="@+id/ivInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_iv_information"
+                        app:layout_constraintStart_toEndOf="@+id/glStartIconInfo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTitleInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="@string/lbl_tvTitleInfo"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/glStartTextInfo"
+                        app:layout_constraintTop_toTopOf="@+id/ivInfo" />
+
+                    <TextView
+                        android:id="@+id/tvInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="@+id/tvTitleInfo"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleInfo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/btnBookingConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/bg_button_normal"
+                android:gravity="center"
+                android:text="@string/lbl_btnBookingConfirm"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBookingConfirm" />
+
+            <TextView
+                android:id="@+id/btnStartMoving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/bg_button_normal"
+                android:gravity="center"
+                android:text="@string/lbl_btnStartMoving"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnBookingConfirm" />
+
+            <TextView
+                android:id="@+id/btnStartOfTreatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/bg_button_normal"
+                android:gravity="center"
+                android:text="@string/lbl_btnStartOfTreatment"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnStartMoving" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/bg_fee"
+                android:paddingBottom="@dimen/_23sdp"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/btnStartOfTreatment">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStartFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.047" />
+
+                <TextView
+                    android:id="@+id/tvTitleServiceCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/lbl_tvTitleServiceCharge"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@id/glStartFee"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvServiceCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTitleServiceCharge"
+                    app:layout_constraintStart_toEndOf="@id/tvTitleServiceCharge"
+                    app:layout_constraintTop_toTopOf="@id/tvTitleServiceCharge" />
+
+                <TextView
+                    android:id="@+id/tvTitleBusinessTripFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/lbl_tvTitleBusinessTripFee"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@id/glStartFee"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleServiceCharge" />
+
+                <TextView
+                    android:id="@+id/tvBusinessTripFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTitleBusinessTripFee"
+                    app:layout_constraintStart_toStartOf="@id/tvServiceCharge"
+                    app:layout_constraintTop_toTopOf="@id/tvTitleBusinessTripFee" />
+
+                <TextView
+                    android:id="@+id/tvTitleFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/lbl_tvTitleFee"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@id/glStartFee"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleBusinessTripFee" />
+
+                <TextView
+                    android:id="@+id/tvFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTitleFee"
+                    app:layout_constraintStart_toStartOf="@id/tvServiceCharge"
+                    app:layout_constraintTop_toTopOf="@id/tvTitleFee" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/btnExtensionOrAdditionalOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/bg_button_normal"
+                android:gravity="center"
+                android:text="@string/lbl_btnExtensionOrAdditionalOptions"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clFee" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/clAddExtend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/btnExtensionOrAdditionalOptions">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clExtend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glStartExtend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.047" />
+
+                    <jp.co.kojimachi.view.AutoShrinkTextView
+                        android:id="@+id/tvInformationUpdate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:text="お客様が延長を希望した場合"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/glStartExtend"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/btnInformationUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/bg_button_information_update"
+                        android:gravity="center"
+                        android:text="@string/lbl_btnInformationUpdate"
+                        android:textColor="@color/colorMain"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTitleNextReservation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblNextReservation"
+                        app:layout_constraintStart_toEndOf="@id/glStartExtend"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInformationUpdate" />
+
+                    <TextView
+                        android:id="@+id/tvTimeEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        app:layout_constraintStart_toEndOf="@id/tvTitleNextReservation"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInformationUpdate" />
+
+                    <TextView
+                        android:id="@+id/tvNameIOldCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/glStartExtend"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleNextReservation" />
+
+                    <TextView
+                        android:id="@+id/tvTimeExtended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/glStartExtend"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNameIOldCourse" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_fee"
+                    android:paddingBottom="@dimen/_12sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/clExtend">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glStartOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.047" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glCenterOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glEndOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.941" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcOption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/glEndOption"
+                        app:layout_constraintStart_toStartOf="@+id/glStartOption"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/btnChange"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:background="@drawable/bg_button_normal"
+                        android:gravity="center"
+                        android:text="@string/lbl_btnChange"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/glCenterOption"
+                        app:layout_constraintStart_toEndOf="@id/glStartOption"
+                        app:layout_constraintTop_toBottomOf="@+id/rcOption" />
+
+                    <TextView
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:background="@drawable/bg_button_cancel"
+                        android:gravity="center"
+                        android:text="@string/lbl_btnCancel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/glEndOption"
+                        app:layout_constraintStart_toEndOf="@id/btnChange"
+                        app:layout_constraintTop_toTopOf="@+id/btnChange" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/btnEndOfTreatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/bg_button_normal"
+                android:gravity="center"
+                android:text="@string/lbl_btnEndOfTreatment"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clAddExtend" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/clEndingTreatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/clAddExtend">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStartIconEndingTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.0414" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStartTitleTextEndingTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStartTextEndingTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5462" />
+
+                <ImageView
+                    android:id="@+id/ivFeeTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_iv_fee"
+                    app:layout_constraintStart_toEndOf="@+id/glStartIconEndingTreatment"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTitleFeeTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/lbl_tvTitleFeeTotal"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/glStartTitleTextEndingTreatment"
+                    app:layout_constraintTop_toTopOf="@id/ivFeeTotal" />
+
+                <TextView
+                    android:id="@+id/tvTitleFeeTaxIncluded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="@string/lbl_tvTitleFeeTaxIncluded"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@id/glStartTitleTextEndingTreatment"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleFeeTotal" />
+
+                <TextView
+                    android:id="@+id/tvFeeTaxIncluded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/glStartTextEndingTreatment"
+                    app:layout_constraintTop_toTopOf="@id/tvTitleFeeTaxIncluded" />
+
+                <TextView
+                    android:id="@+id/tvTitleCashReceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/lbl_tvTitleCashReceived"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@id/glStartTitleTextEndingTreatment"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleFeeTaxIncluded" />
+
+                <TextView
+                    android:id="@+id/tvCashReceive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/glStartTextEndingTreatment"
+                    app:layout_constraintTop_toTopOf="@id/tvTitleCashReceived" />
+
+                <TextView
+                    android:id="@+id/tvTitleFeePlacement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/lbl_tvTitleFeePlacement"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@id/glStartTitleTextEndingTreatment"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleCashReceived" />
+
+                <TextView
+                    android:id="@+id/tvFeePlacement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/glStartTextEndingTreatment"
+                    app:layout_constraintTop_toTopOf="@id/tvTitleFeePlacement" />
+
+                <TextView
+                    android:id="@+id/tvTitleTakeOutCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/lbl_tvTitleTakeOutCash"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@id/glStartTitleTextEndingTreatment"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleFeePlacement" />
+
+                <TextView
+                    android:id="@+id/tvTakeOutCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/glStartTextEndingTreatment"
+                    app:layout_constraintTop_toTopOf="@id/tvTitleTakeOutCash" />
+
+                <TextView
+                    android:id="@+id/tvMsgNotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="@string/lbl_tvMsgNotice"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/glStartTitleTextEndingTreatment"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleTakeOutCash" />
+
+                <CheckBox
+                    android:id="@+id/cbEndingTreatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/lbl_cbEndingTreatment"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMsgNotice" />
+
+                <TextView
+                    android:id="@+id/btnStartMovingOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/bg_button_normal"
+                    android:gravity="center"
+                    android:text="@string/lbl_btnStartMoving"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbEndingTreatment" />
+
+                <TextView
+                    android:id="@+id/btnWait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/bg_button_normal"
+                    android:gravity="center"
+                    android:text="@string/lbl_btnWait"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnStartMovingOn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imgTabDailyReport"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_btn_daily_report_disable"
+            app:layout_constraintEnd_toStartOf="@+id/imgTabNumberOfLinen"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgTabNumberOfLinen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_btn_number_of_linen_disable"
+            app:layout_constraintEnd_toStartOf="@+id/imgTabCancel"
+            app:layout_constraintStart_toEndOf="@+id/imgTabDailyReport" />
+
+        <ImageView
+            android:id="@+id/imgTabCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_btn_tab_cancel_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgTabNumberOfLinen" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

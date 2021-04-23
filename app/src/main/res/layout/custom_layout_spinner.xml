@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <jp.co.kojimachi.view.AutoShrinkTextView
+        android:id="@+id/tvSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_border_select_time"
+        android:drawableEnd="@drawable/ic_iv_spinner"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_12sdp"
+        android:singleLine="true"
+        android:textColor="@color/colorTextTitle"
+        android:textSize="@dimen/_14sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
